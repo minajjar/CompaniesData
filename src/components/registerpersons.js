@@ -17,6 +17,8 @@ function Registerpersons (){
       };
   
       listingRef.push(person);
+      alert("Person inseted!");
+      window.location = '/persons'; 
     };
     
     return (
@@ -24,7 +26,7 @@ function Registerpersons (){
             <Card.Header>Employees Registration</Card.Header>
             <Card.Body>
                 <h2 className="text-primary">Register yourself!</h2>
-                <Form> 
+                <Form onSubmit={createPerson}> 
                     <Form.Group id="email">
                         <Form.Label>Enter your name</Form.Label>
                         <Form.Control type="text" onChange={handleOnChange} id="personNameInput" value={personName} required />

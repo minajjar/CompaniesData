@@ -16,6 +16,8 @@ function Registercompanies (){
           };
       
           listingRef.push(company);
+          alert("Company inseted!");
+          window.location = '/companies'; 
         };
 
     return (
@@ -23,7 +25,7 @@ function Registercompanies (){
             <Card.Header>Companies Registration</Card.Header>
             <Card.Body>
                 <h2 className="text-primary">Register your company!</h2>
-                <Form> 
+                <Form onSubmit={createCompany}> 
                     <Form.Group id="email">
                         <Form.Label>Enter your company name</Form.Label>
                         <Form.Control type="text" onChange={handleOnChange} id="companyNameInput" value={companyName} required />

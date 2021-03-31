@@ -27,8 +27,8 @@ function Companies (){
             <Card.Body>
                 
                 <ListGroup>
-                    {companiesList ? companiesList.map((company) => 
-                        <ListGroup.Item>
+                    {companiesList ? companiesList.map((company, index) => 
+                        <ListGroup.Item key={index}>
                             <span className={company.index}>{company.companyName} </span>
                         </ListGroup.Item>
                             ) : ""}
