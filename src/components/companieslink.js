@@ -26,10 +26,10 @@ function Companieslink (state){
             </Card.Header>
             <Card.Body>
                 <ListGroup>
-                    {companiesList ? companiesList.map((company) => 
-                        <ListGroup.Item>
-                            <span onClick={() => assignToPerson(company.companyName)}>
-                                {company.companyName}</span>
+                    {companiesList ? companiesList.map((company, index) => 
+                        <ListGroup.Item key={index}>
+                            <button onClick={() => assignToPerson(company.companyName)}>
+                                {company.companyName}</button>
                         </ListGroup.Item>
                             ) : ""}
                 </ListGroup>

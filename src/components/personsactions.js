@@ -19,7 +19,7 @@ function Personsactions ({person}){
             <span className={person.index}>{person.personName}</span>
             <span className="text-primary sm"> {person.company} </span>
             {
-                person.company ?  <small className="text-danger" onClick={unlinkPerson}>Unlink to the company</small> : 
+                person.company ?  <button onClick={unlinkPerson}>Unlink from the company</button> : 
                 <small className="text-info">
                     <Link
                         to={{

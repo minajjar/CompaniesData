@@ -2,7 +2,8 @@ import {
   BrowserRouter as Router, 
   Route, 
   Link, 
-  Switch 
+  Switch,
+  BrowserRouter 
 } from 'react-router-dom';
 import { Card } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -39,6 +40,7 @@ function App() {
             </div>          
           </Card.Body>
         </Card> 
+        <BrowserRouter basename="/">
             <Switch>
               <Route exact path='/' component={Home}></Route> 
               <Route exact path='/companies' component={Companies}></Route> 
@@ -47,6 +49,7 @@ function App() {
               <Route exact path='/registerpersons' component={Registerpersons}></Route>
               <Route exact path='/companieslink' component={Companieslink}></Route> 
             </Switch>
+            </BrowserRouter>
         </Router> 
   );
 }
