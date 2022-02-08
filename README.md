@@ -1,3 +1,11 @@
+Hello, This is a test project using ReactJS
+This project allow you to: 
+
+1-Create a company
+2-Create an employee
+3-Link an Employee to a Company 
+4-Unlink an Employee from a Company
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
